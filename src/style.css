@@ -482,3 +482,8 @@ body {
 .chiller-theme .sidebar-footer > a:last-child {
   border-right: none;
 }
+.jobcard {
+  background-color: #d7d7d7;
+  margin: 20px 0;
+  padding: 10px 20px;
+}
