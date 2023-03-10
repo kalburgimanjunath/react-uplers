@@ -4,9 +4,9 @@ import { JOBLIST } from '../data/jobs';
 const JobList = ({ jobs }) => {
   return (
     jobs &&
-    jobs.map((item) => {
+    jobs.map((item, index) => {
       return (
-        <div className="jobcard">
+        <div className="jobcard" key={key}>
           <div>{item.title}</div>
           <div className="row">
             <div className="col-md-5">
@@ -27,7 +27,7 @@ export default function Jobs() {
   const [search, setSearch] = useState('hello world');
   useEffect(() => {}, [jobs, search]);
   return (
-    <main class="page-content">
+    <main className="page-content">
       <div className="container-fluid">
         <h2>Jobs</h2>
         <hr />

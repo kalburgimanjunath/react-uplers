@@ -4,10 +4,10 @@ export default function Menu({ items }) {
     <div className="sidebar-menu">
       <ul>
         {items &&
-          items.map((item) => {
+          items.map((item, index) => {
             return (
-              <li>
-                <a href={item}>{item}</a>
+              <li key={index}>
+                <a href={`/${item}`}>{item}</a>
               </li>
             );
           })}
